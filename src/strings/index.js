@@ -7,11 +7,27 @@ const split = (str, delim) => {
 
 const pairs = (str) => {
   // write code for strings.pairs
+  let arr = []
   
+  for (let i = 0; i < str.length; i++) {
+    if ( i % 2 === 0 ) {
+      let arrayIndex = i / 2
+      arr[arrayIndex] = str[i] 
+    } else {
+      let arrayIndex = (i - 1) / 2
+      arr[arrayIndex] = arr[arrayIndex] + str[i]
+    }
+  }
+
+  return arr
 }
 
 const reverse = (str) => {
   // write code for strings.reverse
+
+  const arr = str.split('')
+  const reversedArr = arr.reverse()
+  return reversedArr.join('')
 
 }
 
