@@ -20,6 +20,8 @@ const currentTime = () => {
   return moment().format('hh:mm:ss A');
 }
 
+// make the functions available globally as a property on this anonymous object
+// i.e. if you imported & assigned the module to a variable `anonymousObject` (using require), you could do anonymousObject.today 
 module.exports = {
   today,
   calendar,

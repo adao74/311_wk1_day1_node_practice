@@ -49,6 +49,8 @@ const comboSum = (arr, sum) => {
 }
 
 
+// make the functions available globally as a property on this anonymous object
+// i.e. if you imported & assigned the module to a variable `anonymousObject` (using require), you could do anonymousObject.isEven 
 
 module.exports = {
   isEven,
